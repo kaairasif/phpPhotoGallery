@@ -1,0 +1,7 @@
+.page_content  .innerContents {
+	padding: 100px 30px;
+}
+.navbar-default .navbar-nav > li > a {
+    padding-left: 10px;
+    padding-right: 10px;
+}
