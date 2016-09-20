@@ -14,11 +14,11 @@ class Session {
 		session_start();
 		$this->check_message();
 		$this->check_login();
-			if ($this->logged_in) {
+		if ($this->logged_in) {
 				//actions to take right away if user is logged in
-			} else {
+		} else {
 				//actions to take right away if user is not logged in
-			}
+		}
 	}
 	
 	public function is_logged_in() {
@@ -27,9 +27,9 @@ class Session {
 	
 	public function login($user) {
 		//database should find user based on username/password
-      if($user) {
-      	$this->user_id = $_SESSION['user_id'] = $user->id;
-      }
+		if($user) {
+			$this->user_id = $_SESSION['user_id'] = $user->id;
+		}
 	}
 
 	public function logout() {
@@ -39,24 +39,24 @@ class Session {
 	}
 
 	public function message($msg="") {
-        if(!empty($msg)){
+		if(!empty($msg)){
         	//then this is "set message";
         	//make sure you understand why $this->message=$msg wouldn't work
-            $_SESSION['message'] = $msg;
-        } else {
+			$_SESSION['message'] = $msg;
+		} else {
         	// then this is get message
-        	return $this->message;
-        }
+			return $this->message;
+		}
 	}
 
 	private function check_message() {
 		// Is there a message stored in the session?
 		if(isset($_SESSION['message'])){
            // Add it as an attribute and erase the stored version
-           $this->message = $_SESSION['message'];
-           unset($_SESSION['message']); 
+			$this->message = $_SESSION['message'];
+			unset($_SESSION['message']); 
 		}else {
-           $this->message = ""; 
+			$this->message = ""; 
 		}
 	}
 

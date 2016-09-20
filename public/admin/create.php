@@ -24,14 +24,10 @@
               $first_name = "";
               $last_name = "";
             }
-         
-
         ?>
-
 		<br />
-		
 
-    <form action="test.php" method="post">
+    <form action="create.php" method="post">
        <input type="text" name="username" placeholder="username"><br />
        <input type="password" name="password" placeholder="password"><br />
        <input type="text" name="first_name" placeholder="First name"><br />

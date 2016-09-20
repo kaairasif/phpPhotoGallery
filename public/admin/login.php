@@ -54,7 +54,9 @@ if (isset($_POST['submit'])) { // Form has been submitted.
 				    </div>					  
 			  </div>				 
 			  <button class="btn btn-average" name="submit" type="submit">login</button>
-			</form>            	
+			  <a class="btn btn-average" href="registration.php">Create new user</a>
+			</form>   
+
         </aside>
       
     </div><!-- / END CONTAINER -->

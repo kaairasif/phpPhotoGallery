@@ -150,7 +150,7 @@ class User {
 	    echo "User created succesfully";
 	    return true;
 	  } else {
-	    echo "Some wrong";
+	    echo "Something wrong";
 	    return false;
 	  }
 	  return $attributes;
