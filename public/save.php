@@ -5,7 +5,7 @@
  fwrite($f, $_POST['content']);
  fclose($f);
 
- echo  " comment has been saved"; 
+ echo  "comment has been saved"; 
 
 
 

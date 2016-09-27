@@ -5,13 +5,14 @@ require_once('database.php');
 
 class User {
 	protected static $table_name="users";
-	protected static $db_fields = array('id', 'username', 'password', 'first_name', 'last_name');
+	protected static $db_fields = array('id', 'username', 'password', 'first_name', 'last_name', 'email');
 
 	public $id;
 	public $username;
 	public $password;
 	public $first_name ="";
-	public $last_name = ""; 
+	public $last_name = "";
+	public $email = ""; 
 	
 
 	public function full_name() {

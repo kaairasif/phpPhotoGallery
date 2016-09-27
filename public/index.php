@@ -62,7 +62,7 @@
               echo "<li> <a href=\"index.php?page={$i}\">{$i}</a></li>";
             }          
            }
-       ?>
+      ?>
       <li>
         <?php 
            if($pagination->has_next_page()) {
@@ -75,7 +75,7 @@
       <?php  } ?>    
     </ul> 
 
- 
+  <a href="admin" title="login">Login</a>
 
   <?php
        /*if($pagination->total_pages() > 1 ) {

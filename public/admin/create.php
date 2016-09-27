@@ -4,8 +4,7 @@
 
 ?>
 <?php  include_layout_template("admin_header.php");?>
-    <div id="main">
-		        
+    <div id="main">		        
         <?php
           if (isset($_POST['submit'])) { // Form has been submitted.
             
@@ -26,7 +25,6 @@
             }
         ?>
 		<br />
-
     <form action="create.php" method="post">
        <input type="text" name="username" placeholder="username"><br />
        <input type="password" name="password" placeholder="password"><br />
